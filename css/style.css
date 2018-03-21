@@ -40,7 +40,7 @@ body {
 }
 
 .login-box input[type="text"] {
-	margin-top: 30px;
+	margin-top: 60px;
 }
 
 .login-box input[type="text"], input[type="password"] {
@@ -54,7 +54,7 @@ body {
 	letter-spacing: 0.90px;
 }
 
-.login-box input[type="submit"]{
+.login-box input[type="button"]{
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -66,7 +66,7 @@ body {
 	margin-bottom: 30px;
 }
 
-.login-box input[type="submit"]:hover {
+.login-box input[type="button"]:hover {
 	background: #FF9035FF;
 	transition: 0.5s;
 }

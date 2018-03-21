@@ -2,21 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="theme-color" content="#2DA4CDFF">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>UI Design - Login</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<script language='Javascript'></script>
 </head>
 <body>
 	<div class="login-box">
-		<img src="img/avatar.png" class="avatar">
-		<form>
-			<input type="text" name="username" placeholder="Username" required style="width: 248px;">
-			<input type="password" name="password" placeholder="Password" style="width: 248px;">
-			<input type="submit" name="submit" value="LOGIN" onclick="js/login.js">
+		<img src="img/avatar.png" class="avatar" alt="avatar">
+		<form name="login">
+			<input type="text" id="username" placeholder="Username" style="width: 248px;" required/>
+			<input type="password" id="password" placeholder="Password" style="width: 248px;" required/>
+			<input type="button" value="LOGIN" onclick="checklogin()"/>
 			<a href="#">Lost your password?</a><br>
 			<a href="#">Don't have an account?</a>
 		</form>
-	</div>	
+	</div>
+	<script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>
