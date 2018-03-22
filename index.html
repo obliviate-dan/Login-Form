@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="theme-color" content="#2DA4CDFF">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>UI Design - Login</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="login-box">
-		<img src="img/avatar.png" class="avatar" alt="avatar">
-		<form name="login">
-			<input type="text" id="username" placeholder="Username" style="width: 248px;" required/>
-			<input type="password" id="password" placeholder="Password" style="width: 248px;" required/>
-			<input type="button" value="LOGIN" onclick="checklogin()"/>
-			<a href="#">Lost your password?</a><br>
-			<a href="#">Don't have an account?</a>
-		</form>
-	</div>
-	<script type="text/javascript" src="js/login.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="theme-color" content="#2DA4CDFF">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>UI Design - Login</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortout icon" href="https://techcentral.com.br/wp-content/uploads/2016/06/cropped-viral-kaboom-favicon.png">
+	</head>
+	<body oncontextmenu="return false">
+		<div class="login-box">
+			<img src="img/avatar.png" class="avatar" alt="avatar">
+			<form name="login">
+				<input type="text" id="username" placeholder="Username" style="width: 248px;" required/>
+				<input type="password" id="password" placeholder="Password" style="width: 248px;" required/>
+				<input type="button" value="LOGIN" onclick="checklogin(this.form)"/>
+				<a href="#">Lost your password?</a><br>
+				<a href="#">Don't have an account?</a>
+			</form>
+		</div>
+		<script language="javascript">
+			function checklogin(form)
+			{
+			 
+			 if(form.username.value == "Fred" && form.password.value == "93/4")
+			  {
+			    window.open('https://github.com/obliviate-dan')
+			  }
+			 else
+			 {
+			   alert("The username and password you entered don't match")
+			  }
+			}
+		</script>
+	</body>
 </html>
